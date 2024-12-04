@@ -32,7 +32,6 @@ function createColorBox() {
   colorBox.addEventListener("click", () => {
     navigator.clipboard.writeText(colorBox.style.backgroundColor)
     navigator.clipboard.readText().then(function (text) {
-      console.log('Texto pegado del portapapeles: ', text);
       votos.push(text);
       // topColors();
     });
